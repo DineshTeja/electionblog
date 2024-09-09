@@ -19,7 +19,7 @@
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>dineshvasireddy@college.harvard.edu (Dinesh Vasireddy)</author>
       <guid>/posts/my-first-post/</guid>
-      <description>&lt;p&gt;This is my first blog post.&lt;/p&gt;
+      <description>&lt;p&gt;A look at the competitiveness of presidential election and predicting 2024&amp;rsquo;s election outcome.&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#introduction&#34;&gt;
@@ -44,9 +44,11 @@
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;We begin by examining the two-party presidential popular vote from 1948 to 2020. The line plot below depicts fluctuations in each political party’s presidential popular vote over the decades.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/PV_national_historical.png&#34; alt=&#34;Two Party Vote Share&#34; title=&#34;Two Party Vote Share&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The two-party vote share metric focuses on the percentage of votes received by the Democratic and Republican candidates, excluding third-party contributions. An analysis of the graph reveals a trend of narrowing margins of victory since the 1990s.&lt;/p&gt;
 &lt;p&gt;What could this mean? That change seemingly indicates a rise in the competitiveness (and potential unpredictability) of presidential elections in recent years.&lt;/p&gt;
 &lt;p&gt;We can see this if we look more deeply at presidential vote share by state in each election from the 1980s to the most recent election in 2020.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/PV_states_historical.png&#34; alt=&#34;Two Party Vote Share&#34; title=&#34;Two Party Vote Share&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Since 1992, there has been a significant shift in the distribution of presidential vote share across states. Though certain states have remained reliably Democratic or Republican, there was a notable variance in the behavior of traditionally non-swing states between 1992 and 2008, like Colorado, New Mexico, and even Arkansas (my state).&lt;/p&gt;
 &lt;p&gt;However, since 2008, the maps look almost identical, with only slight shifts in the behavior of swing states like Pennsylvania, Michigan, and Wisconsin, which seem to be key factors in determining the outcome of the election.&lt;/p&gt;
 &lt;h2 id=&#34;win-margins-in-swing-states-an-interesting-phenomenon&#34; &gt;
@@ -57,9 +59,12 @@
     Win Margins in Swing States: An Interesting Phenomenon
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/PV2024_simple_forecast.png&#34; alt=&#34;Presidential Vote Share 2024 Forecast&#34; title=&#34;Presidential Vote Share 2024 Forecast&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In order to understand the win margins in swing states, we can look at the win margins in various swing states from 1992 to 2020, which I&amp;rsquo;ve plotted below.&lt;/p&gt;
 &lt;p&gt;Additionally, the win margins in swing states like Pennsylvania, Michigan, and Wisconsin have been steadily approaching 0 since 1992, regardless of which party a particular state goes for. This could further indicate that the key swing states in U.S. presidential elections are becoming hyper-competitive as margins of victory are very narrow.&lt;/p&gt;
-&lt;p&gt;We can also see this trend in the most recent win margins by state for the 2020 election. Simple red-blue maps often misrepresent the complex political landscape of U.S. states. Most states are neither solidly Republican nor Democratic, but fall somewhere in between. The 2020 election exemplified this, with super thin margins in several swing states leading to recounts and legal disputes, emphasizing these states&amp;rsquo; crucial role in determining the overall result.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/swing_states_margins_1992_2020.png&#34; alt=&#34;Win Margins in Swing States&#34; title=&#34;Win Margins in Swing States&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can also see this trend in the most recent win margins by state for the 2020 election.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/win_margins_most_recent.png&#34; alt=&#34;Win Margins Recent&#34; title=&#34;Win Margins in 2020&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting that most states are neither solidly Republican nor Democratic, but fall somewhere in between. The 2020 election exemplified this, with super thin margins in several swing states leading to recounts and legal disputes, emphasizing these states&amp;rsquo; crucial role in determining the overall result.&lt;/p&gt;
 &lt;h2 id=&#34;2024-prediction&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#2024-prediction&#34;&gt;
@@ -70,6 +75,7 @@
 &lt;/h2&gt;
 &lt;p&gt;We can use the following model to make a simpler prediction for the 2024 election.&lt;/p&gt;
 &lt;p&gt;$$(Y_{2024_i} = 0.75 \times Y_{2020\text{_voteshare}&lt;em&gt;i} + 0.25 \times Y&lt;/em&gt;{2016\text{_voteshare}_i})$$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/PV2024_simple_forecast.png&#34; alt=&#34;Presidential Vote Share 2024 Forecast&#34; title=&#34;Presidential Vote Share 2024 Forecast&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The simplified forecasting model for the 2024 presidential election highlights several key trends:&lt;/p&gt;
 &lt;p&gt;Swing States: The nearly white states on the map indicate swing states with minimal win margins. These states remain highly competitive and crucial for determining the election outcome.&lt;/p&gt;
 &lt;p&gt;Consistently Red and Blue States: The map shows familiar patterns, with deep red and blue states maintaining their traditional political leanings. These states are less likely to shift allegiance.&lt;/p&gt;
