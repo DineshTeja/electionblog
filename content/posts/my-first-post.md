@@ -10,9 +10,9 @@ A look at the competitiveness of presidential election and predicting 2024's ele
 ## Introduction
 
 Let's think about a few questions to start off: 
-1. How has competitiveness in presidential elections changed over time? 
-2. Which states vote blue/red and how consistently? 
-3. How can we use historical data to predict the outcome of the 2024 Presidential Election? 
+1. How has the competitiveness of presidential races changed over the years?
+2. Which states are reliable red or blue strongholds, and which ones keep us guessing?
+3. Can we use past election data to get a sneak peek at what might unfold in the 2024 Presidential Election?
 
 It's crucial that we look at and interpret historical data to better understand the landscape of the ramping up presidential election between Kamala Harris and Donald Trump. 
 
@@ -54,7 +54,7 @@ We can use the following model to make a simpler prediction for the 2024 electio
 
 $$(Y_{2024_i} = 0.75 \times Y_{2020\text{_voteshare}_i} + 0.25 \times Y_{2016\text{_voteshare}_i})$$
 
-![Presidential Vote Share 2024 Forecast](/images/PV2024_simple_forecast.png "Presidential Vote Share 2024 Forecast")
+![Presidential Vote Share 2024 Forecast](/images/PV2024_simple_forecast_states.png "Presidential Vote Share 2024 Forecast")
 
 The simplified forecasting model for the 2024 presidential election highlights several key trends:
 
@@ -65,6 +65,11 @@ Consistently Red and Blue States: The map shows familiar patterns, with deep red
 The model suggests a win for the Democratic candidate in the electoral college. However, the margins in many states are close, indicating potential volatility.
 
 Overall, the competitive nature of the election is underscored by demographic changes and evolving political landscapes, making predictions challenging yet intriguing.
+
+## Extensions: 
+- Visualization Customizations: 
+  - Win margins by swing states over time plot
+  - State names on win margin map
 
 ## Sources
 All data used for this blog post is from course materials for Harvard's GOV 1347.
