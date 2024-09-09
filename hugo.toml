@@ -1,3 +1,23 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Dinesh Vasireddy GOV 1347(F24)"
+theme = "anubis2"
+
+[author]
+name = "Dinesh Vasireddy"
+email = "dineshvasireddy@college.harvard.edu"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = 'base16-snazzy'
+
+[taxonomies]
+author = "authors"
+
+[params.author]
+name = "Dinesh Vasireddy"
+
+[services.disqus]
+shortname = "" # Leave empty if you're not using Disqus
